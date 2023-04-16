@@ -1,0 +1,32 @@
+.aspect-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.row-item-1 {
+  margin-left: 0.5rem;
+  width: 25px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.row-item-2 {
+  width: 100px;
+  text-align: start;
+  line-height: 50px;
+}
+
+.row-item-3 {
+  width: 100px;
+  text-align: end;
+  line-height: 50px;
+  margin-right: 0.5rem;
+}
+
+p {
+  font-weight: 400;
+}

@@ -1,0 +1,28 @@
+<ng-container *ngIf="leftCardData">
+  <div
+    class="card-container"
+    [ngStyle]="{ 'background-color': leftCardData.style[0] }"
+  >
+    <div class="container-title">
+      <h2>{{ leftCardData.title }}</h2>
+    </div>
+
+    <div
+      class="container-circle"
+      [ngStyle]="{ 'background-color': leftCardData.style[1] }"
+    >
+      <h1>{{ leftCardData.score }}</h1>
+      <h3>of 100</h3>
+    </div>
+
+    <h2>{{ leftCardData.value }}</h2>
+
+    <div class="container-text">
+      <p class="text">{{ leftCardData.resume }}</p>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="!leftCardData">
+  <p>Component not render</p>
+</ng-container>

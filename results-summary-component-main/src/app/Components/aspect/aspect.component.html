@@ -1,0 +1,23 @@
+<ng-container *ngIf="aspects">
+  <div
+    class="aspect-container"
+    [ngStyle]="{ 'background-color': aspects.style[0] }"
+  >
+    <div class="row-item-1">
+      <fa-icon
+        [icon]="aspects.icon"
+        [ngStyle]="{ color: aspects.style[1] }"
+      ></fa-icon>
+    </div>
+    <div class="row-item-2">
+      <h3 [ngStyle]="{ color: aspects.style[1] }">
+        {{ aspects.title }}
+      </h3>
+    </div>
+    <div class="row-item-3">
+      <p style="font-weight: bold">{{ aspects.score }} / 100</p>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="!aspects"> </ng-container>

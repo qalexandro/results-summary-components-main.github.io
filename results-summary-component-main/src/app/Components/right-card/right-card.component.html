@@ -1,0 +1,23 @@
+<ng-container *ngIf="rightCardData">
+  <div class="card-container">
+    <div class="container-title">
+      <h2>{{ rightCardData.title }}</h2>
+    </div>
+    <div class="container-aspects">
+      <app-aspect
+        [aspects]="aspect"
+        *ngFor="let aspect of rightCardData.aspects"
+      ></app-aspect>
+    </div>
+    <div class="button">
+      <app-button
+        [props]="rightCardData.button"
+        (btnClick)="onButtonClick()"
+      ></app-button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="!rightCardData">
+  <p>Component not Render</p>
+</ng-container>
